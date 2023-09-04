@@ -22,4 +22,24 @@ namespace PrimalMonkey.Assets
             Set2DTexture(node, "Rock");
         }
     }
+
+    public class SharpRockProjectileDisplay : ModDisplay
+    {
+        public override string BaseDisplay => Generic2dDisplay;
+
+        public override void ModifyDisplayNode(UnityDisplayNode node)
+        {
+            Set2DTexture(node, "SharpRock");
+        }
+    }
+
+    public class SpearProjectileDisplay : ModDisplay
+    {
+        public override string BaseDisplay => Generic2dDisplay;
+
+        public override void ModifyDisplayNode(UnityDisplayNode node)
+        {
+            Set2DTexture(node, "Spear");
+        }
+    }
 }
