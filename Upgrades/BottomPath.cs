@@ -33,7 +33,7 @@ namespace PrimalMonkey.Upgrades
     {
         public override int Path => BOTTOM;
 
-        public override int Tier => 1;
+        public override int Tier => 2;
 
         public override int Cost => 355;
 
