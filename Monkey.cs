@@ -19,11 +19,11 @@ namespace PrimalMonkey
 
         public override int Cost => 245;
 
-        public override int TopPathUpgrades => 0;
+        public override int TopPathUpgrades => 5;
 
-        public override int MiddlePathUpgrades => 0;
+        public override int MiddlePathUpgrades => 5;
 
-        public override int BottomPathUpgrades => 0;
+        public override int BottomPathUpgrades => 5;
 
         public override string Description => "A Primal Monkey. Throws the Earth's Feces at You";
 

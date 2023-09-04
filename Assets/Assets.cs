@@ -42,4 +42,16 @@ namespace PrimalMonkey.Assets
             Set2DTexture(node, "Spear");
         }
     }
+
+    public class SlingShotProjectileDisplay : ModDisplay
+    {
+        public override string BaseDisplay => Generic2dDisplay;
+
+        public override void ModifyDisplayNode(UnityDisplayNode node)
+        {
+            Set2DTexture(node, "Slingshot");
+        }
+    }
+
+
 }
