@@ -21,12 +21,12 @@ namespace PrimalMonkey.Upgrades
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
-            var BananaFarmWeaponModel = towerModel.GetAttackModel(1).weapons[1];
+            var BananaFarmWeaponModel = towerModel.GetAttackModel(1).weapons[0];
             BananaFarmWeaponModel.projectile.GetBehavior<CashModel>().maximum = 50000;
             BananaFarmWeaponModel.projectile.GetBehavior<CashModel>().minimum = 45000;
             BananaFarmWeaponModel.GetBehavior<EmissionsPerRoundFilterModel>().count = 3;
 
-            var PrimalMonkeyWeaponModel = towerModel.GetWeapon(1);
+            var PrimalMonkeyWeaponModel = towerModel.GetWeapon(0);
             PrimalMonkeyWeaponModel.projectile.GetDamageModel().damage += 500;
             PrimalMonkeyWeaponModel.projectile.GetDamageModel().immuneBloonProperties = Il2Cpp.BloonProperties.None;
             PrimalMonkeyWeaponModel.rate *= 0.01f;
