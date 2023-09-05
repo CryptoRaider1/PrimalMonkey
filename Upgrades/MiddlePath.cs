@@ -88,8 +88,8 @@ namespace PrimalMonkey.Upgrades
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             var CashModel = towerModel.GetAttackModel(1).weapons[0].projectile.GetBehavior<CashModel>();
-            CashModel.maximum = 30;
-            CashModel.minimum = 30;
+            CashModel.maximum = 60;
+            CashModel.minimum = 60;
             towerModel.GetAttackModel(1).weapons[0].GetBehavior<EmissionsPerRoundFilterModel>().count = 35;
         }
     }
