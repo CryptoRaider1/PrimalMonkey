@@ -53,5 +53,31 @@ namespace PrimalMonkey.Assets
         }
     }
 
+    public class RockPiece : ModDisplay
+    {
+        public override string BaseDisplay => Generic2dDisplay;
 
+        public override void ModifyDisplayNode(UnityDisplayNode node)
+        {
+            Set2DTexture(node, Name);
+        }
+    }
+    public class CrushedRock : ModDisplay
+    {
+        public override string BaseDisplay => Generic2dDisplay;
+
+        public override void ModifyDisplayNode(UnityDisplayNode node)
+        {
+            Set2DTexture(node, Name);
+        }
+    }
+    public class RockShard : ModDisplay
+    {
+        public override string BaseDisplay => Generic2dDisplay;
+
+        public override void ModifyDisplayNode(UnityDisplayNode node)
+        {
+            Set2DTexture(node, Name);
+        }
+    }
 }
