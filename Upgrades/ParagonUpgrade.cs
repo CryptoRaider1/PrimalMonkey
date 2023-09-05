@@ -30,7 +30,9 @@ namespace PrimalMonkey.Upgrades
             PrimalMonkeyWeaponModel.projectile.GetDamageModel().damage += 500;
             PrimalMonkeyWeaponModel.projectile.GetDamageModel().immuneBloonProperties = Il2Cpp.BloonProperties.None;
             PrimalMonkeyWeaponModel.rate *= 0.01f;
-            PrimalMonkeyWeaponModel.projectile.pierce += 10;
+            towerModel.GetAttackModel().range = 120;
+            towerModel.range = 120;
+            PrimalMonkeyWeaponModel.projectile.pierce += 50;
         }
     }
 }
