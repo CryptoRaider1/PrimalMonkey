@@ -33,6 +33,8 @@ namespace PrimalMonkey
 
         public override string Icon => "PrimalMonkey-Icon";
 
+        public override ParagonMode ParagonMode => ParagonMode.Base555;
+
         public override void ModifyBaseTowerModel(TowerModel towerModel)
         {
             towerModel.ApplyDisplay<PrimalMonkey000Display>();
