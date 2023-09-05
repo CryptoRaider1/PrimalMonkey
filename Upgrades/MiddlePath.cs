@@ -68,4 +68,29 @@ namespace PrimalMonkey.Upgrades
             towerModel.AddBehavior(bananaFarmAttackModel);
         }
     }
+    internal class HigerQuality : ModUpgrade<Monkey>
+    {
+        public override int Path => MIDDLE;
+        public override int Tier => 4;
+        public override int Cost => 12000;
+        public override void ApplyUpgrade(TowerModel towerModel)
+        {
+            var CashModel = towerModel.GetAttackModel(1).weapons[0].projectile.GetBehavior<CashModel>();
+            CashModel.maximum = 50;
+            CashModel.minimum = 50;
+        }
+    }
+    internal class ExtremlyHigerQuality : ModUpgrade<Monkey>
+    {
+        public override int Path => MIDDLE;
+        public override int Tier => 5;
+        public override int Cost => 65000;
+        public override void ApplyUpgrade(TowerModel towerModel)
+        {
+            var CashModel = towerModel.GetAttackModel(1).weapons[0].projectile.GetBehavior<CashModel>();
+            CashModel.maximum = 30;
+            CashModel.minimum = 30;
+            towerModel.GetAttackModel(1).weapons[0].GetBehavior<EmissionsPerRoundFilterModel>().count = 35;
+        }
+    }
 }
