@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
         <RootNamespace>PrimalMonkey</RootNamespace>
@@ -14,5 +14,71 @@
 
     <ItemGroup>
       <None Remove="PrimalMonkey-Icon.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="0Harmony">
+        <HintPath>..\..\..\..\Desktop\BloonsTD6 - Modded\MelonLoader\net6\0Harmony.dll</HintPath>
+      </Reference>
+      <Reference Include="Assembly-CSharp">
+        <HintPath>..\..\..\..\Desktop\BloonsTD6 - Modded\MelonLoader\Il2CppAssemblies\Assembly-CSharp.dll</HintPath>
+      </Reference>
+      <Reference Include="BloonsTD6 Mod Helper">
+        <HintPath>..\..\..\..\Desktop\BloonsTD6 - Modded\Mods\Btd6ModHelper.dll</HintPath>
+      </Reference>
+      <Reference Include="Il2CppFacepunch.Steamworks">
+        <HintPath>..\..\..\..\Desktop\BloonsTD6 - Modded\MelonLoader\Il2CppAssemblies\Il2CppFacepunch.Steamworks.dll</HintPath>
+      </Reference>
+      <Reference Include="Il2CppInterop.Common">
+        <HintPath>..\..\..\..\Desktop\BloonsTD6 - Modded\MelonLoader\net6\Il2CppInterop.Common.dll</HintPath>
+      </Reference>
+      <Reference Include="Il2CppInterop.Generator">
+        <HintPath>..\..\..\..\Desktop\BloonsTD6 - Modded\MelonLoader\net6\Il2CppInterop.Generator.dll</HintPath>
+      </Reference>
+      <Reference Include="Il2CppInterop.Runtime">
+        <HintPath>..\..\..\..\Desktop\BloonsTD6 - Modded\MelonLoader\net6\Il2CppInterop.Runtime.dll</HintPath>
+      </Reference>
+      <Reference Include="Il2Cppmscorlib">
+        <HintPath>..\..\..\..\Desktop\BloonsTD6 - Modded\MelonLoader\Il2CppAssemblies\Il2Cppmscorlib.dll</HintPath>
+      </Reference>
+      <Reference Include="Il2CppNewtonsoft.Json">
+        <HintPath>..\..\..\..\Desktop\BloonsTD6 - Modded\MelonLoader\Il2CppAssemblies\Il2CppNewtonsoft.Json.dll</HintPath>
+      </Reference>
+      <Reference Include="Il2CppNinjaKiwi.Common">
+        <HintPath>..\..\..\..\Desktop\BloonsTD6 - Modded\MelonLoader\Il2CppAssemblies\Il2CppNinjaKiwi.Common.dll</HintPath>
+      </Reference>
+      <Reference Include="Il2CppNinjaKiwi.LiNK.Aot">
+        <HintPath>..\..\..\..\Desktop\BloonsTD6 - Modded\MelonLoader\Il2CppAssemblies\Il2CppNinjaKiwi.LiNK.Aot.dll</HintPath>
+      </Reference>
+      <Reference Include="Il2CppUniWebView-CSharp">
+        <HintPath>..\..\..\..\Desktop\BloonsTD6 - Modded\MelonLoader\Il2CppAssemblies\Il2CppUniWebView-CSharp.dll</HintPath>
+      </Reference>
+      <Reference Include="MelonLoader">
+        <HintPath>..\..\..\..\Desktop\BloonsTD6 - Modded\MelonLoader\net6\MelonLoader.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine">
+        <HintPath>..\..\..\..\Desktop\BloonsTD6 - Modded\MelonLoader\Il2CppAssemblies\UnityEngine.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.AudioModule">
+        <HintPath>..\..\..\..\Desktop\BloonsTD6 - Modded\MelonLoader\Il2CppAssemblies\UnityEngine.AudioModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.Il2CppAssetBundleManager">
+        <HintPath>..\..\..\..\Desktop\BloonsTD6 - Modded\MelonLoader\Managed\UnityEngine.Il2CppAssetBundleManager.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.Il2CppImageConversionManager">
+        <HintPath>..\..\..\..\Desktop\BloonsTD6 - Modded\MelonLoader\Managed\UnityEngine.Il2CppImageConversionManager.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.ImageConversionModule">
+        <HintPath>..\..\..\..\Desktop\BloonsTD6 - Modded\MelonLoader\Il2CppAssemblies\UnityEngine.ImageConversionModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.ParticleSystemModule">
+        <HintPath>..\..\..\..\Desktop\BloonsTD6 - Modded\MelonLoader\Il2CppAssemblies\UnityEngine.ParticleSystemModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.PhysicsModule">
+        <HintPath>..\..\..\..\Desktop\BloonsTD6 - Modded\MelonLoader\Il2CppAssemblies\UnityEngine.PhysicsModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.UIModule">
+        <HintPath>..\..\..\..\Desktop\BloonsTD6 - Modded\MelonLoader\Il2CppAssemblies\UnityEngine.UIModule.dll</HintPath>
+      </Reference>
     </ItemGroup>
 </Project>
