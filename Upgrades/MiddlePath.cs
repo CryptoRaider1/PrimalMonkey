@@ -41,4 +41,18 @@ namespace PrimalMonkey.Upgrades
             towerModel.GetWeapon().projectile.pierce = +1;
         }
     }
+
+    internal class CollectBananas : ModUpgrade<Monkey>
+    {
+        public override int Path => MIDDLE;
+
+        public override int Tier => 3;
+
+        public override int Cost => 3200;
+
+        public override void ApplyUpgrade(TowerModel towerModel)
+        {
+            towerModel.GetWeapon().projectile.pierce = +1;
+        }
+    }
 }
