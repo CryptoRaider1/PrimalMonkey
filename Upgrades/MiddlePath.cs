@@ -28,10 +28,12 @@ namespace PrimalMonkey.Upgrades
         public override int Tier => 1;
 
         public override int Cost => 400;
+        public override string Description => "Builds The Farms";
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             towerModel.GetWeapon().projectile.pierce =+ 1;
+            towerModel.GetWeapon().projectile.GetDamageModel().damage += 1;
         }
     }
 
@@ -42,10 +44,12 @@ namespace PrimalMonkey.Upgrades
         public override int Tier => 2;
 
         public override int Cost => 800;
+        public override string Description => "Plants The Bananas";
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             towerModel.GetWeapon().projectile.pierce = +1;
+            towerModel.GetWeapon().projectile.GetDamageModel().damage += 1;
         }
     }
 
@@ -56,6 +60,8 @@ namespace PrimalMonkey.Upgrades
         public override int Tier => 3;
 
         public override int Cost => 3200;
+
+        public override string Description => "The Primal Monkey Now Generates 300 Cash Per Round With Revenue From The Bananas";
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
@@ -73,11 +79,12 @@ namespace PrimalMonkey.Upgrades
         public override int Path => MIDDLE;
         public override int Tier => 4;
         public override int Cost => 12000;
+        public override string Description => "Now Makes 1050 Cash Per Round";
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             var CashModel = towerModel.GetAttackModel(1).weapons[0].projectile.GetBehavior<CashModel>();
-            CashModel.maximum = 50;
-            CashModel.minimum = 50;
+            CashModel.maximum = 70;
+            CashModel.minimum = 70;
         }
     }
     internal class ExtremelyHighDemand : ModUpgrade<Monkey>
@@ -85,11 +92,13 @@ namespace PrimalMonkey.Upgrades
         public override int Path => MIDDLE;
         public override int Tier => 5;
         public override int Cost => 65000;
+
+        public override string Description => "Now Makes 3500 Cash Per Round";
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             var CashModel = towerModel.GetAttackModel(1).weapons[0].projectile.GetBehavior<CashModel>();
-            CashModel.maximum = 60;
-            CashModel.minimum = 60;
+            CashModel.maximum = 100;
+            CashModel.minimum = 100;
             towerModel.GetAttackModel(1).weapons[0].GetBehavior<EmissionsPerRoundFilterModel>().count = 35;
         }
     }
