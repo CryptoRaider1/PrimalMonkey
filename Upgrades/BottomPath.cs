@@ -84,6 +84,7 @@ namespace PrimalMonkey.Upgrades
             towerModel.GetWeapon().projectile.pierce =+ 3;
             towerModel.range = +15;
             towerModel.GetAttackModel().range =+ 15;
+            towerModel.GetWeapon().projectile.ApplyDisplay<Arrow>();
         }
     }
 

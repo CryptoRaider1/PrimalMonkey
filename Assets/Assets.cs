@@ -80,4 +80,13 @@ namespace PrimalMonkey.Assets
             Set2DTexture(node, Name);
         }
     }
+    public class Arrow : ModDisplay
+    {
+        public override string BaseDisplay => Generic2dDisplay;
+
+        public override void ModifyDisplayNode(UnityDisplayNode node)
+        {
+            Set2DTexture(node, Name);
+        }
+    }
 }

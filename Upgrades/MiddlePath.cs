@@ -68,7 +68,7 @@ namespace PrimalMonkey.Upgrades
             towerModel.AddBehavior(bananaFarmAttackModel);
         }
     }
-    internal class HigherQuality : ModUpgrade<Monkey>
+    internal class HigherDemand : ModUpgrade<Monkey>
     {
         public override int Path => MIDDLE;
         public override int Tier => 4;
