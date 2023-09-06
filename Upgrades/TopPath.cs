@@ -1,6 +1,7 @@
 ﻿using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
 using Il2CppAssets.Scripts.Models.Towers;
+using Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions;
 using PrimalMonkey.Assets;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,8 @@ namespace PrimalMonkey.Upgrades
 
         public override int Cost => 355;
 
+        public override string Description => "Primal Monkey Throws Faster";
+
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             towerModel.GetWeapon().rate *= 0.8f;
@@ -30,6 +33,8 @@ namespace PrimalMonkey.Upgrades
         public override int Tier => 2;
 
         public override int Cost => 825;
+
+        public override string Description => "Primal Monkey Throws Even Faster";
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
@@ -44,10 +49,13 @@ namespace PrimalMonkey.Upgrades
 
         public override int Cost => 1955;
 
+        public override string Description => "Primal Monkey Throws so Fast The Rock Starts to Break";
+
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             towerModel.GetWeapon().rate *= 0.6f;
             towerModel.GetWeapon().projectile.ApplyDisplay<RockPiece>();
+            towerModel.GetWeapon().emission = new ArcEmissionModel("Emission", 2, 0, 15, null, false, false);
         }
     }
     internal class RockCrushingSpeed : ModUpgrade<Monkey>
@@ -58,10 +66,13 @@ namespace PrimalMonkey.Upgrades
 
         public override int Cost => 8190;
 
+        public override string Description => "The Rocks Are Thrown so Hard it Breaks Into Multiple Pieces";
+
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             towerModel.GetWeapon().rate *= 0.6f;
             towerModel.GetWeapon().projectile.ApplyDisplay<CrushedRock>();
+            towerModel.GetWeapon().emission = new ArcEmissionModel("Emission", 4, 0, 15, null, false, false);
         }
     }
     internal class RockDestruction : ModUpgrade<Monkey>
@@ -72,10 +83,13 @@ namespace PrimalMonkey.Upgrades
 
         public override int Cost => 24505;
 
+        public override string Description => "Small Pieces of Rocks Are Now Thrown From The Primal Monkey Because of The Intense Speed";
+
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             towerModel.GetWeapon().rate *= 0.6f;
             towerModel.GetWeapon().projectile.ApplyDisplay<RockShard>();
+            towerModel.GetWeapon().emission = new ArcEmissionModel("Emission", 20, 0, 15, null, false, false);
         }
     }
 }
