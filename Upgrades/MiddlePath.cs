@@ -68,7 +68,7 @@ namespace PrimalMonkey.Upgrades
             towerModel.AddBehavior(bananaFarmAttackModel);
         }
     }
-    internal class HigerQuality : ModUpgrade<Monkey>
+    internal class HigherQuality : ModUpgrade<Monkey>
     {
         public override int Path => MIDDLE;
         public override int Tier => 4;
@@ -80,7 +80,7 @@ namespace PrimalMonkey.Upgrades
             CashModel.minimum = 50;
         }
     }
-    internal class ExtremlyHigerQuality : ModUpgrade<Monkey>
+    internal class ExtremlyHighQuality : ModUpgrade<Monkey>
     {
         public override int Path => MIDDLE;
         public override int Tier => 5;
