@@ -1,13 +1,9 @@
-﻿using BTD_Mod_Helper.Api.Towers;
+﻿using BTD_Mod_Helper;
+using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
 using Il2CppAssets.Scripts.Models.Towers;
 using Il2CppAssets.Scripts.Models.TowerSets;
 using PrimalMonkey.Assets;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PrimalMonkey
 {
@@ -40,5 +36,6 @@ namespace PrimalMonkey
             towerModel.ApplyDisplay<PrimalMonkey000Display>();
             towerModel.GetWeapon().projectile.ApplyDisplay<RockProjectileDisplay>();
         }
+        public override bool IsValidCrosspath(int[] tiers) => ModHelper.HasMod("UltimateCrosspathing") ? true : base.IsValidCrosspath(tiers);
     }
 }
