@@ -80,7 +80,7 @@ namespace PrimalMonkey.Upgrades
             CashModel.minimum = 50;
         }
     }
-    internal class ExtremlyHighDemand : ModUpgrade<Monkey>
+    internal class ExtremelyHighDemand : ModUpgrade<Monkey>
     {
         public override int Path => MIDDLE;
         public override int Tier => 5;
