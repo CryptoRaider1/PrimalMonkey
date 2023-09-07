@@ -29,7 +29,7 @@ namespace PrimalMonkey.Upgrades
             BananaFarmWeaponModel.GetBehavior<EmissionsPerRoundFilterModel>().count = 3;
 
             var PrimalMonkeyWeaponModel = towerModel.GetWeapon(0);
-            PrimalMonkeyWeaponModel.projectile.GetDamageModel().damage += 75;
+            PrimalMonkeyWeaponModel.projectile.GetDamageModel().damage += 105;
             PrimalMonkeyWeaponModel.projectile.GetDamageModel().immuneBloonProperties = Il2Cpp.BloonProperties.None;
             towerModel.GetDescendants<FilterInvisibleModel>().ForEach(model => model.isActive = false);
             PrimalMonkeyWeaponModel.rate *= 0.01f;
