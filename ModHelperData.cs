@@ -3,7 +3,7 @@ namespace PrimalMonkey;
 public static class ModHelperData
 {
     public const string WorksOnVersion = "37.3";
-    public const string Version = "1.0.1";
+    public const string Version = "1.0.2";
     public const string Name = "PrimalMonkey";
 
     public const string Description = "Adds a Primal Monkey Tower to the Game";
