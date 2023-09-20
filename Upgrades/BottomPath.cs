@@ -62,8 +62,8 @@ namespace PrimalMonkey.Upgrades
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             towerModel.GetWeapon().projectile.GetDamageModel().damage =+ 4;
-            towerModel.range =+ 15;
-            towerModel.GetAttackModel().range =+ 15;
+            towerModel.range += 15;
+            towerModel.GetAttackModel().range += 15;
             towerModel.GetWeapon().projectile.ApplyDisplay<SlingShotProjectileDisplay>();
         }
     }
