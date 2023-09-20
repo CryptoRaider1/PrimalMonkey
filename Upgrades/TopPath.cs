@@ -24,6 +24,7 @@ namespace PrimalMonkey.Upgrades
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             towerModel.GetWeapon().rate *= 0.8f;
+            towerModel.GetWeapon().projectile.pierce = +1;
         }
     }
     internal class EvenFasterThrowing : ModUpgrade<Monkey>
@@ -39,6 +40,7 @@ namespace PrimalMonkey.Upgrades
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             towerModel.GetWeapon().rate *= 0.7f;
+            towerModel.GetWeapon().projectile.pierce = +3;
         }
     }
     internal class SuperFastThrowing : ModUpgrade<Monkey>

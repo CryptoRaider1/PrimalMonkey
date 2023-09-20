@@ -44,7 +44,7 @@ namespace PrimalMonkey.Upgrades
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             towerModel.GetWeapon().projectile.GetDamageModel().damage =+ 1;
-            towerModel.GetWeapon().projectile.pierce =+ 1;
+            towerModel.GetWeapon().projectile.pierce =+ 3;
             towerModel.GetWeapon().projectile.ApplyDisplay<SpearProjectileDisplay>();
         }
     }
@@ -81,7 +81,7 @@ namespace PrimalMonkey.Upgrades
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             towerModel.GetWeapon().projectile.GetDamageModel().damage =+ 3;
-            towerModel.GetWeapon().projectile.pierce =+ 3;
+            towerModel.GetWeapon().projectile.pierce =+ 6;
             towerModel.range = +15;
             towerModel.GetAttackModel().range =+ 15;
             towerModel.GetWeapon().projectile.ApplyDisplay<Arrow>();
@@ -101,7 +101,7 @@ namespace PrimalMonkey.Upgrades
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             towerModel.GetWeapon().projectile.GetDamageModel().damage =+ 9;
-            towerModel.GetWeapon().projectile.pierce =+ 6;
+            towerModel.GetWeapon().projectile.pierce =+ 9;
             towerModel.range = +15;
             towerModel.GetAttackModel().range =+ 15;
         }
